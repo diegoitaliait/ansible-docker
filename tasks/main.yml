@@ -51,7 +51,7 @@
 
 - name: Install Docker
   apt:
-    name: "docker-{{ docker__edition }}"
+    name: "docker-{{ docker__edition }}=5:{{ docker__version }}*"
     state: "{{ docker__state }}"
 
 - name: Install Python packages
